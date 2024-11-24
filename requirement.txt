@@ -1,0 +1,2 @@
+cmd for generate random JWT_SECRET on shell
+# openssl rand -base64 32 
