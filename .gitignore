@@ -1,7 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-node_modules
 /node_modules
 /.pnp
 .pnp.js
@@ -64,7 +63,6 @@ __pycache__/
 venv/
 ENV/
 VENV/
-.env
 *.env
 *.venv
 .env.production
@@ -127,4 +125,3 @@ docs/_build/
 # Backup files
 *.bak
 *.tmp
-
