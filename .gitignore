@@ -63,6 +63,7 @@ __pycache__/
 venv/
 ENV/
 VENV/
+.env
 *.env
 *.venv
 .env.production
