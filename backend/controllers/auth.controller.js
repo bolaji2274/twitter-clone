@@ -13,7 +13,7 @@ export const signup = async (req, res) => {
 
         const existingUser = await User.findOne({ username })
         if(existingUser){
-            return res.status(400).json({error: "Username is already exist"})
+            return res.status(400).json({error: "Username already exist"})
         }
 
         const existingEmail = await User.findOne({ email })
@@ -36,6 +36,7 @@ export const signup = async (req, res) => {
         if (newUser) {
             generateTokenAndSetCookie(newUser._id, res)
             await newUser.save();
+            
             res.status(201).json({
                 _id: newUser._id,
                 fullName: newUser.fullName,
